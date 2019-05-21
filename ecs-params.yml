@@ -15,3 +15,6 @@ run_params:
       security_groups:
         - "sg-0e5cd18b6fbb61668"
       assign_public_ip: DISABLED
+  task_placement:
+    constraints:
+      - type: distinctInstance
